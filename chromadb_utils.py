@@ -15,8 +15,8 @@ class DB_service:
     vectordb = []
 
     def load_text_files_to_db(self):
-        #loader = DirectoryLoader('./data/', glob = "./*.txt", loader_cls=TextLoader, show_progress=True)
-        loader = DirectoryLoader('./data/', glob = "./*.pdf", loader_cls=PyPDFLoader)
+        loader = DirectoryLoader('./data/', glob = "./*.txt", loader_cls=TextLoader, show_progress=True)
+        #loader = DirectoryLoader('./data/', glob = "./*.pdf", loader_cls=PyPDFLoader)
         documents = loader.load()
         print(f"load_text_files loaded documents!!!!!!!!!!!!!!!!!!!!!!!!!")
 
