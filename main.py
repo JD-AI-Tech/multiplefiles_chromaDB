@@ -37,7 +37,7 @@ with st.sidebar:
     ''')
 
 
-uploaded_files = st.file_uploader("Please select file(s) to upload", [".pdf"], accept_multiple_files=True)
+uploaded_files = st.file_uploader("Please select file(s) to upload", [".txt"], accept_multiple_files=True)
 if uploaded_files:
     print(f"jddebug77 ******************* number of files uploaded = {len(uploaded_files)}")
     for uploaded_file in uploaded_files:
